@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap');
 
-.App h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  text-align: center;
-  color: black;
 
+
+
+
+
+body{
+  background: black;
+  font-family: 'Dosis Variable', sans-serif;
+  color: white;
 }
