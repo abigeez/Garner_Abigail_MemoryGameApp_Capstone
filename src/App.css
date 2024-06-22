@@ -1,11 +1,21 @@
 
 
-
-
-
-
 body{
-  background: black;
-  font-family: 'Dosis Variable', sans-serif;
-  color: white;
+  background: rgb(191,34,195);
+  background: radial-gradient(circle, rgba(191,34,195,1) 0%, rgba(76,45,253,1) 100%);
+  
+  
+}
+
+.App h1{
+  size: 20px;
+  color:white;
+  text-align:center;
+
+}
+
+.App {
+ 
+  display:block;
+  text-align:center;
 }
