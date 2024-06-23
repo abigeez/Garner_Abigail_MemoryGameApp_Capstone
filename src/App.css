@@ -1,15 +1,14 @@
 
 
 body{
-  background: rgb(191,34,195);
-  background: radial-gradient(circle, rgba(191,34,195,1) 0%, rgba(76,45,253,1) 100%);
   
+  background:coral;
   
 }
 
 .App h1{
   size: 20px;
-  color:white;
+  color:black;
   text-align:center;
 
 }

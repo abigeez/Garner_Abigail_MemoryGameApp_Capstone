@@ -5,7 +5,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <h1>Sound Memory Match Game</h1>
+      <h1>Dinosaur Memory Match Game</h1>
       <button>START</button>
 
     </div>
