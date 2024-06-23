@@ -20,20 +20,17 @@ const imgCards = [
 
 function App() {
 
-
   //creating a state to store the cards in for each individual game that is played to finish
-
-const [gameCards,setgameCards] = useState([])
-
-
+const [gameCards,setGameCards] = useState([])
 
   //creating a function to duplicate the cards so that they can be matched and then using the sort method 
   //to shuffle them up based on what it returns and then be assigned an id to be able to match them
-
   const cardShuffle = () => {
     const cardsShuffled = [...imgCards, ...imgCards]
       .sort(() => Math.random() - 0.5)
       .map((gameCard) => ({ ...gameCard, id: Math.random() }))
+
+      setGameCards(cardsShuffled)
   }
 
   return (
