@@ -10,6 +10,6 @@ const allSym = shuffle([...symbols,...symbols]);
 //// creating component for the actual game .///
 export default function MemoryMatch() {
   return (
-    <div>MemoryMatch</div>
+    <div>Memory Match</div>
   )
 }
