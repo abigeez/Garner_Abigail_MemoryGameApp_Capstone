@@ -31,12 +31,13 @@ const [attempts, setAttempts] = useState(0)
       .map((gameCard) => ({ ...gameCard, id: Math.random() }))
 
       setGameCards(cardsShuffled)
+      setAttempts(0)
   }
-
+console.log(gameCards, attempts)
   return (
     <div className="App">
       <h1>Dinosaur Match Memory Game</h1>
-      <button>START</button>
+      <button onClick={cardShuffle}> New Game </button>
 
     </div>
 
