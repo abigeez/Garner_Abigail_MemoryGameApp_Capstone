@@ -15,7 +15,23 @@ body{
 }
 
 .App {
- 
+  max-width:1000px;
+  margin: 38px auto;
   display:block;
   text-align:center;
+}
+
+ button {
+  background-color:GREY;
+  border: 1.5px solid white;
+  border-radius:4px;
+  padding: 5px 11px;
+  font-size:16px;
+  font-weight:500;
+  
+}
+
+button:hover{
+  background:rgb(19, 19, 250);
+  
 }

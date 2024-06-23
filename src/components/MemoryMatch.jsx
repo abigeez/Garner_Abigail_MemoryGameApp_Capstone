@@ -1,6 +1,6 @@
 import React from 'react'
 import "../components/MemoryMatch.css";
-
+import shuffle from 
 const symbols = [1,2,3,4,5];
 const allSym = shuffle([...symbols,...symbols]);
 ///creating symbols to represent the cards that will be used in the game//
