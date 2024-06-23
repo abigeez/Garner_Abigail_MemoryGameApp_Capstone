@@ -23,6 +23,7 @@ function App() {
   const cardShuffle = () => {
     const cardsShuffled = [...imgCards,...imgCards]
     .sort(()=> Math.random() - 0.5 )
+    .map((cardId) => ({...cardId}))
   }
 
   return (
