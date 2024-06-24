@@ -33,7 +33,7 @@ function App() {
 
   //creating states for the user's initial choices of cards.
   const [selectionOne, setselectionOne] = useState(null)
-  const [selectionTwo, setselectiontwo] = useState(null)
+  const [selectionTwo, setselectionTwo] = useState(null)
 
   //creating a function to duplicate the cards so that they can be matched and then using the sort method 
   //to shuffle them up based on what it returns and then be assigned an id to be able to match them
@@ -48,7 +48,7 @@ function App() {
  
   // handle a selection
   const handleSelection = (gameCard) => {
-    console.log(gameCard)
+    selectionOne ? setSe
   }
 
 

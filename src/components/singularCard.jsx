@@ -7,14 +7,15 @@ import React from 'react'
 //// creating a separate card component so I can simplify the code in the app component and
 // can write other logic extensively in this component
 
-export default function SingularCard({gameCard}) {
-    const handleClick () => {
-        
+export default function SingularCard({gameCard, handleSelection}) {
+    const handleClick = () => {
+        handleSelection(gameCard) 
     }
 return (
     <div className='gamecard'>
         <div>
             <img className='dinoSide' src={gameCard.src} alt="front of card" />
+
             <img className='eggSide' 
             src={egg_card} 
             onClick={handleClick} 
