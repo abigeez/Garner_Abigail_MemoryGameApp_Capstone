@@ -1,6 +1,7 @@
 import { useState } from 'react'
-
 import './App.css'
+import SingularCard from './components/SingularCard'
+
 import dino_one from '../public/img/dino1Card.png'
 import dino_two from '../public/img/dino2Card.png'
 import dino_three from '../public/img/dino3Card.png'
@@ -48,12 +49,7 @@ function App() {
 
       <div className='gamecardLayout'>
         {gameCards.map(gameCard => (
-          <div className='gamecard' key={gameCard.id}>
-            <div>
-              <img className='dinoSide' src={gameCard.src} alt="front of card" />
-              <img className='eggSide' src="/img/eggCover.png" alt="Back side of card" />
-            </div>
-          </div>
+           <SingularCard key={gameCard.id} gameCard={gameCard} />
 
         ))}
 
