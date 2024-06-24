@@ -40,22 +40,12 @@ button:hover{
 }
 
 .gamecardLayout{
-  margin-top:25px;
+  margin-top:5px;
   display: grid;
   
   grid-template-columns: 1fr 1fr 1fr 1fr;
   
-  grid-gap:21px;
+  grid-gap:5px;
  
-}
-
-.dinoSide{
-  border: .5px solid white;
-  background:rgb(25, 61, 139);
-}
-
-.eggSide{
-  border: .5px solid white;
-  background:rgb(25, 61, 139);
 }
 
