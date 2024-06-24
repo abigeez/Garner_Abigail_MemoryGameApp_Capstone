@@ -42,9 +42,10 @@ button:hover{
 .gamecardLayout{
   margin-top:25px;
   display: grid;
-  justify-content:center;
+  
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap:15px;
+  
+  grid-gap:21px;
  
 }
 
