@@ -19,7 +19,7 @@ const imgCards = [
   { src: dino_three },
   { src: dino_four },
   {src: dino_five },
-  {src: dino_six },
+  {src : dino_six },
   
 ];
 
@@ -51,7 +51,7 @@ function App() {
           <div className='gamecard' key={gameCard.id}>
             <div>
               <img className='dinoSide' src={gameCard.src} alt="front of card" />
-              <img className='eggSide' src={egg_card} alt="Back side of card" />
+              <img className='eggSide' src="/img/eggCover.png" alt="Back side of card" />
             </div>
           </div>
 
