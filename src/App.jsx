@@ -7,7 +7,7 @@ import dino_two from './img/dino2Card.png'
 import dino_three from './img/dino3Card.png'
 import dino_four from './img/dino4Card.png'
 import dino_five from './img/dino5Card.png'
-import dino_six  from './img/dino6Card.png'
+import dino_six from './img/dino6Card.png'
 import egg_card from './img/eggCover.png'
 
 ///creating an  array  of obejcts for the cards to remain constant because 
@@ -15,13 +15,13 @@ import egg_card from './img/eggCover.png'
 
 
 const imgCards = [
-  {src: dino_one },
-  {src: dino_two },
+  { src: dino_one },
+  { src: dino_two },
   { src: dino_three },
   { src: dino_four },
-  {src: dino_five },
-  {src : dino_six },
-  
+  { src: dino_five },
+  { src: dino_six },
+
 ];
 
 
@@ -45,12 +45,20 @@ function App() {
     setGameCards(cardsShuffled)
     setAttempts(0)
   }
- 
+
   // handle a selection
   const handleSelection = (gameCard) => {
-    selectionOne ? setSe
+    selectionOne ? setselectionTwo(gameCard) : setselectionOne(gameCard)
   }
+  /// using a ternary operator to dictate whether or not the value of the card represented through its id is 
+  // null or if it has a value to it. 
 
+  // starting over selections and iterating by one
+  const resetSelection = () => {
+    setselectionOne(null)
+    setselectionTwo(null)
+    setAttempts(prevAttempts => prevAttempts + 1)
+  }
 
   return (
     <div className="App">
@@ -60,10 +68,10 @@ function App() {
 
       <div className='gamecardLayout'>
         {gameCards.map(gameCard => (
-           <SingularCard 
-           key={gameCard.id}
-           gameCard={gameCard} 
-           handleSelection = {handleSelection} />
+          <SingularCard
+            key={gameCard.id}
+            gameCard={gameCard}
+            handleSelection={handleSelection} />
 
         ))}
 
