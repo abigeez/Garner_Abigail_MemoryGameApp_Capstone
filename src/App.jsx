@@ -38,10 +38,16 @@ console.log(gameCards, attempts)
     <div className="App">
       <h1>Dinosaur Match Memory Game</h1>
       <button onClick={cardShuffle}> New Game </button>
+    
+    
+    <div className='gamecardLayout'>
+      
 
     </div>
+  
+    </div>
 
-
+// class gamecard layout is used to map through the state of the shuffled cards to create grid.
   )
 }
 
