@@ -8,11 +8,17 @@ import React from 'react'
 // can write other logic extensively in this component
 
 export default function SingularCard({gameCard}) {
+    const handleClick () => {
+        
+    }
 return (
     <div className='gamecard'>
         <div>
             <img className='dinoSide' src={gameCard.src} alt="front of card" />
-            <img className='eggSide' src={egg_card} alt="Back side of card" />
+            <img className='eggSide' 
+            src={egg_card} 
+            onClick={handleClick} 
+            alt="Back side of card" />
         </div>
     </div>
 )

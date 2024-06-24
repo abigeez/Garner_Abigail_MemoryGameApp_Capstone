@@ -31,9 +31,9 @@ function App() {
   const [gameCards, setGameCards] = useState([])
   const [attempts, setAttempts] = useState(0)
 
-  //creating states for the user's initial choices 
-  const [decisionOne, setdecisionOne] = useState(null)
-  const [decisionTwo, setdecisiontwo] = useState(null)
+  //creating states for the user's initial choices of cards.
+  const [selectionOne, setselectionOne] = useState(null)
+  const [selectionTwo, setselectiontwo] = useState(null)
 
   //creating a function to duplicate the cards so that they can be matched and then using the sort method 
   //to shuffle them up based on what it returns and then be assigned an id to be able to match them
@@ -45,7 +45,13 @@ function App() {
     setGameCards(cardsShuffled)
     setAttempts(0)
   }
-  console.log(gameCards, attempts)
+ 
+  // handle a selection
+  const handleSelection = (gameCard) => {
+    console.log(gameCard)
+  }
+
+
   return (
     <div className="App">
       <h1>Dinosaur Match Memory Game</h1>
@@ -54,7 +60,10 @@ function App() {
 
       <div className='gamecardLayout'>
         {gameCards.map(gameCard => (
-           <SingularCard key={gameCard.id} gameCard={gameCard} />
+           <SingularCard 
+           key={gameCard.id}
+           gameCard={gameCard} 
+           handleSelection = {handleSelection} />
 
         ))}
 
