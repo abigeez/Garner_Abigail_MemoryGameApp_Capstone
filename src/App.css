@@ -2,7 +2,7 @@
 
 body{
   
-  background:rgb(190, 95, 60);
+  background:rgb(246, 150, 115);
   
 }
 
@@ -14,7 +14,7 @@ body{
 }
 
 .App {
-  max-width:1000px;
+ 
   margin: 38px auto;
   display:block;
   text-align:center;

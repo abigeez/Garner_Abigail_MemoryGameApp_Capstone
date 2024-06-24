@@ -1,28 +1,20 @@
 import { useState } from 'react'
 
 import './App.css'
-import dino_one from '../public/img/dino1Card.png'
-import dino_two from '../public/img/dino2Card.png'
-import dino_three from '../public/img/dino3Card.png'
-import dino_four from '../public/img/dino4Card.png'
-import dino_five from '../public/img/dino5Card.png'
-import dino_six  from '../public/img/dino6Card.png'
-import egg_card from '../public/img/eggCover.png'
+
+
 
 ///creating an  array  of obejcts for the cards to remain constant because 
 // the cards  dont need to be recreated every time the component is reevaluated.
 
-
 const imgCards = [
-  { dino_one },
-  { dino_two },
-  { dino_three },
-  { dino_four },
-  { dino_five },
-  { dino_six },
-  
+  { "src": "/img/dino1Card.png" },
+  { "src": "/img/dino2Card.png" },
+  { "src": "/img/dino3Card.png" },
+  { "src": "/img/dino4Card.png" },
+  { "src": "/img/dino5Card.png" },
+  { "src": "/img/dino6Card.png" }
 ];
-
 
 function App() {
 
@@ -51,7 +43,7 @@ function App() {
           <div className='gamecard' key={gameCard.id}>
             <div>
               <img className='dinoSide' src={process.env.PUBLIC_URL + gameCard.src} alt="front of card" />
-              <img className='eggSide' src={egg_card} alt="Back side of card" />
+              <img className='eggSide' src="/img/eggCover.png" alt="Back side of card" />
             </div>
           </div>
 
