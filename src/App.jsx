@@ -2,13 +2,13 @@ import { useState } from 'react'
 import './App.css'
 import SingularCard from './components/SingularCard'
 
-import dino_one from '../public/img/dino1Card.png'
-import dino_two from '../public/img/dino2Card.png'
-import dino_three from '../public/img/dino3Card.png'
-import dino_four from '../public/img/dino4Card.png'
-import dino_five from '../public/img/dino5Card.png'
-import dino_six  from '../public/img/dino6Card.png'
-import egg_card from '../public/img/eggCover.png'
+import dino_one from './img/dino1Card.png'
+import dino_two from './img/dino2Card.png'
+import dino_three from './img/dino3Card.png'
+import dino_four from './img/dino4Card.png'
+import dino_five from './img/dino5Card.png'
+import dino_six  from './img/dino6Card.png'
+import egg_card from './img/eggCover.png'
 
 ///creating an  array  of obejcts for the cards to remain constant because 
 // the cards  dont need to be recreated every time the component is reevaluated.
