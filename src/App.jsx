@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useEffect,useState } from 'react'
 import './App.css'
 import SingularCard from './components/SingularCard'
 
@@ -56,8 +56,18 @@ function App() {
 
 //looking at the selected cards and comparing the two.
 useEffect(() => {
+if (selectionOne && selectionTwo) {
 
-},[]);
+ if(selectionOne.src === selectionTwo.src){
+  console.log('match')
+  resetSelection()
+ } else{
+  console.log('not a match')
+  resetSelection()
+ }
+}
+
+}, [selectionOne,selectionTwo])
 
 
   // starting over selections and iterating by one
