@@ -60,7 +60,7 @@ if (selectionOne && selectionTwo) {
 
  if(selectionOne.src === selectionTwo.src){
   setGameCards(prevGameCards => {
-    return prevGameCards.map(gameCard =>{
+    return prevGameCards.map(gameCard => {
       if (gameCard.src === selectionOne.src) {
         return {...gameCard,matched: true}
       } else{
@@ -70,7 +70,6 @@ if (selectionOne && selectionTwo) {
   })
   resetSelection()
  } else{
-  
   resetSelection()
  }
 }
@@ -97,8 +96,10 @@ console.log(gameCards)
           <SingularCard
             key={gameCard.id}
             gameCard={gameCard}
-            handleSelection={handleSelection} />
-
+            handleSelection={handleSelection}
+            turnedOver={true}
+          />
+            
         ))}
 
       </div>
