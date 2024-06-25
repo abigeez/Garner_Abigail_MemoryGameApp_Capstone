@@ -117,7 +117,7 @@ cardShuffle ()
         ))}
 
       </div>
-        <p>Attempts: {attempts} </p>
+        <p className="attemptCtr" >Attempts: {attempts} </p>
     </div>
 
     // gamecard layout above is used to map through the state of the
