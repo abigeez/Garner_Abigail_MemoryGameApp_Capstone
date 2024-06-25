@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import './App.css'
 import SingularCard from './components/SingularCard'
 
@@ -47,17 +47,24 @@ function App() {
   }
 
   // handle a selection
+   /// & using a ternary operator to dictate whether or not the value of the card represented through its id is 
+  // null or if it has a value to it. 
   const handleSelection = (gameCard) => {
     selectionOne ? setselectionTwo(gameCard) : setselectionOne(gameCard)
   }
-  /// using a ternary operator to dictate whether or not the value of the card represented through its id is 
-  // null or if it has a value to it. 
+ 
+
+//looking at the selected cards and comparing the two.
+useEffect(() => {
+
+},[]);
+
 
   // starting over selections and iterating by one
   const resetSelection = () => {
     setselectionOne(null)
     setselectionTwo(null)
-    setAttempts(prevAttempts => prevAttempts + 1)
+    setAttempts(prevAttempts => prevAttempts + 1 )
   }
 
   return (
