@@ -15,9 +15,23 @@
 
 .gamecard .dinoSide{
 transform: rotateY(90deg);
+transition: all ease-in 0.2s;
 position: absolute;
 }
 
 .cardRevealed .dinoSide{ 
     transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+/* egg side of card - back */
+
+.gamecard .eggSide{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.cardRevealed .eggSide{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
 }
