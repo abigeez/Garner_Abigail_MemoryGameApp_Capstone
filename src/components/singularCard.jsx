@@ -13,7 +13,7 @@ export default function SingularCard({gameCard, handleSelection, cardRevealed}) 
     }
 return (
     <div className='gamecard'>
-        <div className= {cardRevealed ? "cardRevealed": ""}>
+        <div className={cardRevealed ? "cardRevealed": ""}>
             <img className='dinoSide' src={gameCard.src} alt="front of card" />
 
             <img className='eggSide' 

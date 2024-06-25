@@ -10,3 +10,15 @@
     position:relative;
     max-width: 1000px;
 }
+
+
+/* image part of the card - dinosaur side */
+
+.gamecard .dinoSide{
+transform: rotateY(90deg);
+position: absolute;
+}
+
+.cardRevealed .dinoSide{ 
+    transform: rotateY(0deg);
+}
