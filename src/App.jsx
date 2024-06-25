@@ -109,7 +109,7 @@ function App() {
         ))}
 
       </div>
-
+        <p>Attempts: {attempts} </p>
     </div>
 
     // gamecard layout above is used to map through the state of the
