@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import LandingPage from './pages/LandingPage.jsx'
 import CommentsPage from './pages/CommentsPage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+
 
 const router = createBrowserRouter([
     {
@@ -20,6 +22,10 @@ const router = createBrowserRouter([
     {
         path: "reviews",
         element: <CommentsPage />
+    },
+    {
+        path: "instructions",
+        element: <AboutPage/>
     }
 ]);
 
