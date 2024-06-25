@@ -97,7 +97,7 @@ console.log(gameCards)
             key={gameCard.id}
             gameCard={gameCard}
             handleSelection={handleSelection}
-            turnedOver={true}
+            cardRevealed={gameCard === selectionOne}
           />
             
         ))}
