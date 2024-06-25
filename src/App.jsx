@@ -56,12 +56,12 @@ function App() {
   }
 
 
-  //comparing the two selected carrds &  by determining its state on whether or not they match
+  //comparing the two selected cards &  by determining its state on whether or not they match
 
   useEffect(() => {
-    setDeactivated(true)
     if (selectionOne && selectionTwo) {
-
+      setDeactivated(true)
+      
       if (selectionOne.src === selectionTwo.src) {
         setGameCards(prevGameCards => {
           return prevGameCards.map(gameCard => {
