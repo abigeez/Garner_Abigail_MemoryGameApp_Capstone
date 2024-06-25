@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import SingularCard from './components/SingularCard'
-
+import Navbar from './components/Navbar'
 import dino_one from './img/dino1Card.png'
 import dino_two from './img/dino2Card.png'
 import dino_three from './img/dino3Card.png'
@@ -100,6 +100,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <h1>Dinosaur Match Memory Game</h1>
       <button onClick={cardShuffle}> New Game </button>
 

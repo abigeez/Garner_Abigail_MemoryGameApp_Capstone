@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import LandingPage from './pages/landingpage.jsx'
-import CommentsPage from './pages/commentsPage.jsx'
+import LandingPage from './pages/LandingPage.jsx'
+import CommentsPage from './pages/CommentsPage.jsx'
 import {
     createBrowserRouter,
     RouterProvider,
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     },
     {
         path: "reviews",
-        element: 
+        element: <CommentsPage />
     }
 ]);
 
