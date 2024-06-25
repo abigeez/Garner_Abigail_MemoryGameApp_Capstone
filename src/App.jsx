@@ -59,10 +59,18 @@ useEffect(() => {
 if (selectionOne && selectionTwo) {
 
  if(selectionOne.src === selectionTwo.src){
-  console.log('match')
+  setGameCards(prevGameCards => {
+    return prevGameCards.map(gameCard =>{
+      if (gameCard.src === selectionOne.src) {
+        return {...gameCard,matched: true}
+      } else{
+        return gameCard
+      }
+    })
+  })
   resetSelection()
  } else{
-  console.log('not a match')
+  
   resetSelection()
  }
 }
