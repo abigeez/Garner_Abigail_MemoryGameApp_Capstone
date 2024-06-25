@@ -77,6 +77,7 @@ if (selectionOne && selectionTwo) {
 
 }, [selectionOne,selectionTwo])
 
+console.log(gameCards)
 
   // starting over selections and iterating by one
   const resetSelection = () => {
