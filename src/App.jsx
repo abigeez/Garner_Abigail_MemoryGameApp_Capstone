@@ -62,7 +62,7 @@ function App() {
   useEffect(() => {
     if (selectionOne && selectionTwo) {
       setDeactivated(true)
-      
+
       if (selectionOne.src === selectionTwo.src) {
         setGameCards(prevGameCards => {
           return prevGameCards.map(gameCard => {
@@ -91,11 +91,11 @@ function App() {
     setDeactivated(false)
   }
 
-//having a new game load without having to click new game when you first enter the page"
+  //having a new game load without having to click new game when you first enter the page"
 
-useEffect(() => {
-cardShuffle ()
-}, [])
+  useEffect(() => {
+    cardShuffle()
+  }, [])
 
 
   return (
@@ -117,7 +117,7 @@ cardShuffle ()
         ))}
 
       </div>
-        <p className="attemptCtr" >Attempts: {attempts} </p>
+      <p className="attemptCtr" >Attempts: {attempts} </p>
     </div>
 
     // gamecard layout above is used to map through the state of the

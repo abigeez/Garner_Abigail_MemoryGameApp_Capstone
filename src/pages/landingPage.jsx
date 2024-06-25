@@ -1,9 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-function landingPage() {
-  return (
-    <div>Home</div>
-  )
+function LandingPage() {
+    return (
+        <div>
+            <Navbar></Navbar>
+            <div>Home</div>
+        </div>
+    )
 }
 
-export default landingPage
+export default LandingPage

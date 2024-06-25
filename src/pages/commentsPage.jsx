@@ -1,9 +1,13 @@
 import React from 'react'
-
-function commentsPage() {
+import Navbar from '../components/Navbar'
+function CommentsPage() {
   return (
-    <div>Comments Page</div>
-  )
+   <div>
+            <Navbar></Navbar>
+            <div>Home</div>
+        </div>
+    )
+  
 }
 
-export default commentsPage
+export default CommentsPage
