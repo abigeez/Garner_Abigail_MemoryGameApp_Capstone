@@ -2,7 +2,7 @@ import React from 'react'
 
 function landingPage() {
   return (
-    <div>landingpage</div>
+    <div>Home</div>
   )
 }
 
