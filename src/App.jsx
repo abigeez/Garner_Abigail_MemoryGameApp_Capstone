@@ -15,12 +15,12 @@ import egg_card from './img/eggCover.png'
 
 
 const imgCards = [
-  { src: dino_one },
-  { src: dino_two },
-  { src: dino_three },
-  { src: dino_four },
-  { src: dino_five },
-  { src: dino_six },
+  { src: dino_one, matched: false},
+  { src: dino_two, matched: false },
+  { src: dino_three,matched: false },
+  { src: dino_four,matched: false },
+  { src: dino_five,matched: false },
+  { src: dino_six,matched: false }
 
 ];
 
