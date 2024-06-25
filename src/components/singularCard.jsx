@@ -7,13 +7,13 @@ import React from 'react'
 //// creating a separate card component so I can simplify the code in the app component and
 // can write other logic extensively in this component
 
-export default function SingularCard({gameCard, handleSelection}) {
+export default function SingularCard({gameCard, handleSelection, cardRevealed}) {
     const handleClick = () => {
         handleSelection(gameCard) 
     }
 return (
     <div className='gamecard'>
-        <div>
+        <div className= {cardRevealed ? "cardRevealed": ""}>
             <img className='dinoSide' src={gameCard.src} alt="front of card" />
 
             <img className='eggSide' 
