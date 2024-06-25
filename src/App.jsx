@@ -43,7 +43,8 @@ function App() {
     const cardsShuffled = [...imgCards, ...imgCards]
       .sort(() => Math.random() - 0.5)
       .map((gameCard) => ({ ...gameCard, id: Math.random() }))
-
+    setselectionOne(null)
+    setselectionTwo(null)
     setGameCards(cardsShuffled)
     setAttempts(0)
   }
@@ -89,6 +90,13 @@ function App() {
     setAttempts(prevAttempts => prevAttempts + 1)
     setDeactivated(false)
   }
+
+//having a new game load without having to click new game when you first enter the page"
+
+useEffect(() => {
+cardShuffle ()
+}, [])
+
 
   return (
     <div className="App">
