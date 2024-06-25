@@ -1,4 +1,4 @@
-import { useEffect,useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import SingularCard from './components/SingularCard'
 
@@ -15,12 +15,12 @@ import egg_card from './img/eggCover.png'
 
 
 const imgCards = [
-  { src: dino_one, matched: false},
+  { src: dino_one, matched: false },
   { src: dino_two, matched: false },
-  { src: dino_three,matched: false },
-  { src: dino_four,matched: false },
-  { src: dino_five,matched: false },
-  { src: dino_six,matched: false }
+  { src: dino_three, matched: false },
+  { src: dino_four, matched: false },
+  { src: dino_five, matched: false },
+  { src: dino_six, matched: false }
 
 ];
 
@@ -47,42 +47,42 @@ function App() {
   }
 
   // handle a selection
-   /// & using a ternary operator to dictate whether or not the value of the card represented through its id is 
+  /// & using a ternary operator to dictate whether or not the value of the card represented through its id is 
   // null or if it has a value to it. 
   const handleSelection = (gameCard) => {
     selectionOne ? setselectionTwo(gameCard) : setselectionOne(gameCard)
   }
- 
 
-//looking at the selected cards and comparing the two.
-useEffect(() => {
-if (selectionOne && selectionTwo) {
 
- if(selectionOne.src === selectionTwo.src){
-  setGameCards(prevGameCards => {
-    return prevGameCards.map(gameCard => {
-      if (gameCard.src === selectionOne.src) {
-        return {...gameCard,matched: true}
-      } else{
-        return gameCard
+  //looking at the selected cards and comparing the two.
+  useEffect(() => {
+    if (selectionOne && selectionTwo) {
+
+      if (selectionOne.src === selectionTwo.src) {
+        setGameCards(prevGameCards => {
+          return prevGameCards.map(gameCard => {
+            if (gameCard.src === selectionOne.src) {
+              return { ...gameCard, matched: true }
+            } else {
+              return gameCard
+            }
+          })
+        })
+        resetSelection()
+      } else {
+        resetSelection()
       }
-    })
-  })
-  resetSelection()
- } else{
-  resetSelection()
- }
-}
+    }
 
-}, [selectionOne,selectionTwo])
+  }, [selectionOne, selectionTwo])
 
-console.log(gameCards)
+  console.log(gameCards)
 
   // starting over selections and iterating by one
   const resetSelection = () => {
     setselectionOne(null)
     setselectionTwo(null)
-    setAttempts(prevAttempts => prevAttempts + 1 )
+    setAttempts(prevAttempts => prevAttempts + 1)
   }
 
   return (
@@ -97,9 +97,9 @@ console.log(gameCards)
             key={gameCard.id}
             gameCard={gameCard}
             handleSelection={handleSelection}
-            cardRevealed={gameCard === selectionOne}
+            cardRevealed={gameCard === selectionOne || gameCard === selectionTwo || gameCard.matched}
           />
-            
+
         ))}
 
       </div>
