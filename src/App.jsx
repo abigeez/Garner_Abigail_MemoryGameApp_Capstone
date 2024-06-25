@@ -56,8 +56,10 @@ function App() {
   }
 
 
-  //looking at the selected cards and comparing the two.
+  //comparing the two selected carrds &  by determining its state on whether or not they match
+
   useEffect(() => {
+    setDeactivated(true)
     if (selectionOne && selectionTwo) {
 
       if (selectionOne.src === selectionTwo.src) {
@@ -85,6 +87,7 @@ function App() {
     setselectionOne(null)
     setselectionTwo(null)
     setAttempts(prevAttempts => prevAttempts + 1)
+    setDeactivated(false)
   }
 
   return (
@@ -100,7 +103,7 @@ function App() {
             gameCard={gameCard}
             handleSelection={handleSelection}
             cardRevealed={gameCard === selectionOne || gameCard === selectionTwo || gameCard.matched}
-            deactivated={}
+            deactivated={deactivated}
           />
 
         ))}
