@@ -70,7 +70,7 @@ function App() {
         })
         resetSelection()
       } else {
-        resetSelection()
+        setTimeout(() => resetSelection(),1200)
       }
     }
 
