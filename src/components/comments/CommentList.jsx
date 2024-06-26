@@ -45,7 +45,7 @@ function CommentList() {
         setComments(updatedComments);
         setEditIndex(null);
       }catch (error) {
-
+        console.error('Error adding comment:', error);
       }
     }
   }
