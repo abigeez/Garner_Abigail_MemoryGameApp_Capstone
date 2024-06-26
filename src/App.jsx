@@ -9,7 +9,7 @@ import dino_four from './img/dino4Card.png'
 import dino_five from './img/dino5Card.png'
 import dino_six from './img/dino6Card.png'
 import egg_card from './img/eggCover.png'
-
+import '@fontsource/luckiest-guy'
 ///creating an  array  of obejcts for the cards to remain constant because 
 // the cards  dont need to be recreated every time the component is reevaluated.
 
