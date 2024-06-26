@@ -3,7 +3,11 @@ import "../components/Navbar.css"
 
 
 export default function Navbar() {
-  return (
-    <div>Navbar</div>
-  )
+
+  return <nav className="navBar">
+<a href ="">Dinosaur Memory Match Game</a>
+
+  </nav>
+    
+  
 }

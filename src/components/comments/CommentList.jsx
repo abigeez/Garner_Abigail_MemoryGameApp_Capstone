@@ -1,9 +1,17 @@
 import React from 'react'
-const CommentList = ({currentUser})
-const 
+
+
 function CommentList() {
+  
   return (
-    <div>CommentList</div>
+    <div className="commentBox">CommentList
+
+      <form>
+
+      </form>
+    </div>
+
+    
   )
 }
 

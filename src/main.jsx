@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import LandingPage from './pages/LandingPage.jsx'
 import CommentsPage from './pages/CommentsPage.jsx'
-import AboutPage from './pages/aboutPage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
 import {
     createBrowserRouter,
     RouterProvider,
