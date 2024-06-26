@@ -116,21 +116,15 @@ function CommentList() {
       <strong>{comment.author} </strong>: {comment.body}
       <button onClick={() => handleEdit(index)}>Edit</button>
 
-     
     </li>
-  )
-
-  )}
+  ))}
 </ul>
 
-    )
-  }
-
-      
-    </div>
+    )}
+</div>
 
 
-  )
-}
+  );
+};
 
-export default CommentList
+export default CommentList;
