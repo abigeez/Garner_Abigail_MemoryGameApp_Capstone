@@ -1,14 +1,25 @@
+import { useState,useEffect } from 'react'
 import React from 'react'
 
 
 function CommentList() {
+  const CommentSection = () => {
+    const [comments, setComments] = useState([]);
+  }
   
+
+
   return (
+
     <div className="commentBox">
  <h2 className="h2Comment">Comment Section:</h2>
  <br></br>
  <p>Leave a comment below on what you thought about the game!</p>
-      <form>
+      <form >
+        <label>
+          Name:
+        
+        </label>
 
       </form>
     </div>
