@@ -48,6 +48,24 @@ function CommentList() {
         console.error('Error adding comment:', error);
       }
     }
+    setAuthor('');
+    setBody('');
+  };
+
+
+  const handleEdit = (index) => {
+    setAuthor(comments[index].author);
+    setText(comments[index].body);
+    setEditIndex(index);
+  };
+
+
+  const handleDelete = async (index) => {
+    try{
+      await axios.delete(`http://localhost:8000/comments/${comments[index]._id}`);
+
+
+    }
   }
 
 
