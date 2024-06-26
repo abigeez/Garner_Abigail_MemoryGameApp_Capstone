@@ -4,8 +4,12 @@ function AboutPage() {
   return (
     <div>
       <Navbar/>
-      Instructions</div>
+      <div>
+        <h3> About the Designer:</h3>
+      </div>
+      </div>
   )
 }
 
 export default AboutPage
+
