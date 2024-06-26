@@ -89,11 +89,13 @@ const CommentList = () => {
     <div className="commentBox">
       <h2 className="h2Comment">Comment Section:</h2>
       <br></br>
-      <p>Leave a comment below on what you thought about the game!</p>
-      <form onSubmit = {handleSubmit}>
+      <p className="paraOne">Leave a comment below on what you thought about the game!</p>
+      <br />
+      <br />
+      <form className="formName"onSubmit = {handleSubmit}>
         <label>
           Name:
-        <input type="text" value={author} onchange={handleNameChange} required />
+        <input className="buttonOne" type="text" value={author} onChange={handleNameChange} required />
         </label>
     <br />
     <label>
