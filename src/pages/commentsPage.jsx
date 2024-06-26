@@ -20,7 +20,7 @@ const data = getData()
    
    <div>
             <Navbar></Navbar>
-            <div>Leave A Review</div>
+           
             <div>
                 <CommentList
                 data ={data} />
