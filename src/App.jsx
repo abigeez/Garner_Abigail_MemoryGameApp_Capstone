@@ -101,9 +101,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-     
+     <p className="paraTwo">Instructions: Click on an egg to reveal a dinosaur and try to remember its location so you can match two of the same. Continue until there's no cards left. </p>
       <button onClick={cardShuffle}> New Game </button>
-
+      
 
       <div className='gamecardLayout'>
         {gameCards.map(gameCard => (
