@@ -1,6 +1,7 @@
 import { useState,useEffect } from 'react'
 import React from 'react'
 import axios from 'axios'
+import "../comments/CommentList.css"
 
 function CommentList() {
 
@@ -11,9 +12,15 @@ function CommentList() {
     const [editIndex, setEditIndex] = useState(null); // to track which comment is being edited
 
     useEffect(() => {
+      fetchComments();
+    },[]
+  );
 
+  const fetchComments = async () => {
+    try{
+      const response = await axios.get('http://localhost:8000/comments');
     }
-  )
+  }
 
 
 
