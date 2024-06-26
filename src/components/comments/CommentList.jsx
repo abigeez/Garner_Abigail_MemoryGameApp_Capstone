@@ -3,9 +3,8 @@ import React from 'react'
 import axios from 'axios'
 import "../comments/CommentList.css"
 
-function CommentList() {
+const CommentList = () => {
 
-  const CommentSection = () => {
     const [comments, setComments] = useState([]);
     const [author, setAuthor] = useState('');
     const [body, setBody] = useState('');
@@ -19,6 +18,7 @@ function CommentList() {
     const fetchComments = async () => {
       try {
         const response = await axios.get('http://localhost:8000/comments');
+        setComments(response.data);
       } catch (error) {
         console.error('Error fetching comments:', error);
       }
@@ -50,7 +50,7 @@ function CommentList() {
       } else {
         //otherwise add new comment
         try {
-          const response = await axios.post('http://localhost:8000/comments'), { author, body });
+          const response = await axios.post('http://localhost:8000/comments', { author, body });
           setComments([...comments, response.data]);
         } catch (error) {
           console.error('Error adding comment:', error);
@@ -63,7 +63,7 @@ function CommentList() {
 
     const handleEdit = (index) => {
       setAuthor(comments[index].author);
-      setText(comments[index].body);
+      setBody(comments[index].body);
       setEditIndex(index);
     };
 
@@ -79,7 +79,7 @@ function CommentList() {
       }
     }
 
-  };
+  
 
 
 
@@ -115,7 +115,7 @@ function CommentList() {
     <li key={(comment._id)}>
       <strong>{comment.author} </strong>: {comment.body}
       <button onClick={() => handleEdit(index)}>Edit</button>
-
+      <button onClick={() => handleDelete(index)}>Delete</button>
     </li>
   ))}
 </ul>
@@ -125,6 +125,6 @@ function CommentList() {
 
 
   );
-};
 
+};
 export default CommentList;
