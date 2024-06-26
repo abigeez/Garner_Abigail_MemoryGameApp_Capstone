@@ -45,6 +45,14 @@ function CommentList() {
         setComments(updatedComments);
         setEditIndex(null);
       }catch (error) {
+        console.error('Error updating comment:', error);
+      }
+    }else {
+      //otherwise add new comment
+      try{
+        const response = await axios.post('http://localhost:8000/comments'), {author,body});
+        setComments([...comments,response.data]);
+      }catch (error){
         console.error('Error adding comment:', error);
       }
     }
@@ -69,25 +77,10 @@ function CommentList() {
     } catch (error) {
       console.error('Error deleting comment:', error);
     }
+  }
+
   };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  }
   
 
 
