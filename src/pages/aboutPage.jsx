@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import prof_pic from '../img/profilePic.jpg'
 import '../pages/AboutPage.css'
-import welc_dino from '../img/leggoDino.png'
+
 function AboutPage() {
   return (
     <div className="itsMe">
