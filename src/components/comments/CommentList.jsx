@@ -63,10 +63,13 @@ function CommentList() {
   const handleDelete = async (index) => {
     try{
       await axios.delete(`http://localhost:8000/comments/${comments[index]._id}`);
-
-
+      const updatedComments = [...comments];
+      updatedComments.splice(index,1);
+      setComments(updatedComments); 
+    } catch (error) {
+      console.error('Error deleting comment:', error);
     }
-  }
+  };
 
 
 
