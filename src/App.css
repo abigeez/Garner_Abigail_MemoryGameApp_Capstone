@@ -18,7 +18,7 @@ body{
 
 .App {
   
-  margin: 10px;
+  margin: 5px;
   display:block;
   text-align:center;
 }
@@ -37,7 +37,7 @@ body{
 }
 
 button:hover{
-  background:yellow;
+  background: rgba(55, 72, 228, 0.904);
   color:black;
   
 }

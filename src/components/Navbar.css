@@ -1,14 +1,17 @@
 *{
     box-sizing: border-box;
+    
 }
 
 body{
     margin:1px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .navBar{
-    background-color:white;
+    background-color:rgba(255, 254, 242, .45);
+    border:rgb(44, 43, 43) solid 2px;
     color:black;
     display:flex;
     position:sticky;
@@ -36,7 +39,7 @@ list-style: none;
     
 }
 .navBar li:hover {
-    background-color:rgb(77, 160, 162);
+    background-color:coral;
 }
 
 .siteName{

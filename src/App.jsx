@@ -101,7 +101,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Dinosaur Match Memory Game</h1>
+     
       <button onClick={cardShuffle}> New Game </button>
 
 
