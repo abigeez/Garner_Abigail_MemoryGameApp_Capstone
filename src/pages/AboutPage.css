@@ -1,4 +1,25 @@
 .itsMe img{
-    width:200px;
-    height:200px;
+    width:152px;
+    height:220px;
+    margin: 10px;
+    border-radius: 18px;
+    border: white 1px solid;
+    box-shadow: 7px 7px;
+    display:flex;
+    flex-direction:column;
+}
+.body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.aboutMe{
+    margin-top:20px;
+    margin-left:10px;
+    display:flex;
+    flex-direction:column;
+    border: 1px solid black;
+    padding:12px;
+    max-width:300px;
+    max-height:350px;
+    background-color:rgba(255, 254, 242, .45);
 }
