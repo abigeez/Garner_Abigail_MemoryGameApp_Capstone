@@ -19,8 +19,40 @@ function CommentList() {
   const fetchComments = async () => {
     try{
       const response = await axios.get('http://localhost:8000/comments');
+    } catch (error) {
+      console.error('Error fetching comments:', error);
+    }
+  };
+
+  const handleNameChange = (event) => {
+    setAuthor(event.target.value);
+  };
+
+  const handleTextChange = (event) => {
+    setBody(event.target.value);
+
+  };
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault ();
+    if(editIndex !== null) {
+      ///  for if edit index is not null, update existing comment
+      try {
+        await axios.put(`http://localhost:8000/comments/${comments[editIndex]._id}`, {author,body});
+        const updatedComments = [...comments];
+        updatedComments[editIndex] = {...updatedComments[editIndex], author,body};
+        setComments(updatedComments);
+        setEditIndex(null);
+      }catch (error) {
+
+      }
     }
   }
+
+
+
+
 
 
 
