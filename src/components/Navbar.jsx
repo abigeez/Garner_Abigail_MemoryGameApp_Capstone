@@ -5,7 +5,7 @@ import "../components/Navbar.css"
 export default function Navbar() {
 
   return <nav className="navBar">
-<a href ="/" className="siteName">Dinosaur Memory Match Game</a>
+<p className="siteName">Dinosaur Memory Match Game</p>
 <ul>
   <li> 
     <a href ="/">Home</a> </li>
