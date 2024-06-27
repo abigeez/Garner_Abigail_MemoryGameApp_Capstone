@@ -12,7 +12,7 @@ import {
 
 const router = createBrowserRouter([
     {
-        path: "playgame",
+        path: "/playgame",
         element: <App />
     },
     {
@@ -20,11 +20,11 @@ const router = createBrowserRouter([
         element: <LandingPage />
     },
     {
-        path: "reviews",
+        path: "/reviews",
         element: <CommentsPage />
     },
     {
-        path: "instructions",
+        path: "/instructions",
         element: <AboutPage/>
     }
 ]);
