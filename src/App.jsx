@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { Routes, Route } from 'react-router-dom';
 import SingularCard from './components/SingularCard'
 import Navbar from './components/Navbar'
 import dino_one from './img/dino1Card.png'
@@ -99,12 +100,16 @@ function App() {
 
 
   return (
+    
+    
+   
     <div className="App">
       <Navbar />
+      
      <p className="paraTwo">Instructions: Click on an egg to reveal a dinosaur and try to remember its location so you can match two of the same. Continue until there's no cards left. </p>
       <button onClick={cardShuffle}> New Game </button>
-      
 
+      
       <div className='gamecardLayout'>
         {gameCards.map(gameCard => (
           <SingularCard
@@ -123,6 +128,7 @@ function App() {
 
     // gamecard layout above is used to map through the state of the
     // shuffled cards to create grid using a template.
+    
   );
 }
 

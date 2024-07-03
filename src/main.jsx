@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <CommentsPage />
     },
     {
-        path: "/instructions",
+        path: "/about",
         element: <AboutPage/>
     }
 ]);
