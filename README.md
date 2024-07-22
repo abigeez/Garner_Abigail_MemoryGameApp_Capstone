@@ -15,10 +15,8 @@ I built my Front-end using React + Vite and CSS to style the application . I bro
 Links:
 
 
+
 [Capstone Backend Github Link]:
- https://github.com/abigeez/Garner_Abigail_MemoryGameApp_Capstone_Backend
+
+https://github.com/abigeez/Garner_Abigail_MemoryGameApp_Capstone_Backend
  
-[Deployed Capstone Frontend  Netlify Link]
-
-
-[Deployed Capstone Backend Render Link]
